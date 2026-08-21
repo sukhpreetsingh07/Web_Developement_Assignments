@@ -1,0 +1,17 @@
+
+x=[10,20,30,40,15]
+y=bytes(x)
+for a in y:
+    print(a)
+'''
+
+
+'''
+a=range(7)
+print(a)
+for x in a:
+    print(x)
+b= range(2,10,3)
+print(b)
+for y in b:
+    print(y)
