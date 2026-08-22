@@ -14,4 +14,12 @@ for x in a:
 b= range(2,10,3)
 print(b)
 for y in b:
-    print(y)#p
+    print(y)
+'''
+
+
+
+ '''
+a=-89 #any number is true except or none
+a="amit" #string is true except empty string
+print(bool(a)+3)
