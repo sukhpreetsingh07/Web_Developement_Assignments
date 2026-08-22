@@ -14,4 +14,4 @@ for x in a:
 b= range(2,10,3)
 print(b)
 for y in b:
-    print(y)
+    print(y)#p
