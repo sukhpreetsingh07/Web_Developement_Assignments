@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Checkout - ShopNow Store</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>ShopNow Online Store</h1>
+        <h2>Secure Checkout</h2>
+        <p>Thank you for shopping with us! Please review your order summary below and complete your contact, delivery, and payment details to place your order.</p>
+        <p><a href="https://www.flipkart.com/viewcart?exploreMode=TRUE&preference=FLIPKART&pageUID=1788200373286"> Return to Shopping Cart</a> | <a href="https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwjFmqf0vMuWAxUwxTwCHbbVChsYACICCAEQABoCc2Y&co=1&ase=2&gclid=CjwKCAjwzNTUBhAjEiwA7zcvWuns4jse8fOht_lCFjZ_eFnzmZuPg7kV_h3tvZDtujGdqLlCG2jFWBoCTn4QAvD_BwE&cid=CAASugHkaCreHyiZWM3APcMAewoD1vsAnJEbqxaKIFPiv27XPiCC6_mzFfm9Xt1Z_B_8bOIafvDid0G2hWXv21ofAqljwHREIvOy8WB6W8DoROG_-WVa5L-QjKLw5gdqATiOO-3w7eWXnu5XoOa6hwNoyceopzR6zvGJ5GxOkxbzZTIda72QoMD77LHVN3IEtHlf7zKtyvFjkdED0fmZ_FvNUlJ8MVCpRPNVLkhnjCTo65YJsgrd6A8ItZDvJ2Y&cce=2&category=acrcp_v1_32&sig=AOD64_0jZOgly0s_SuoNh_-QkxrxCcyyHA&q&nis=4&adurl=https://www.flipkart.com/?affid%3Dgrowthte%26affExtParam1%3DENKR20260818A2134518594%26affExtParam2%3D4612513%26gad_source%3D1%26gad_campaignid%3D24133603126%26gbraid%3D0AAAABEfXRVLXiRvfak_t8NMQPYa4LFYqO%26gclid%3DCjwKCAjwzNTUBhAjEiwA7zcvWuns4jse8fOht_lCFjZ_eFnzmZuPg7kV_h3tvZDtujGdqLlCG2jFWBoCTn4QAvD_BwE&ved=2ahUKEwjCnKD0vMuWAxXMbmwGHS6aO-0Q0Qx6BAgMEAE">Continue Shopping</a></p>
+    </header>
+
+    <hr>
+
+    <!-- Visual Banner -->
+    <section>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA5Ad4VEtoV4dHMskHMTCbh334YVFkz4a6jPSCiE1HEQ&s=10" alt="ShopNow Fast and Secure Delivery Service" width="500" height="350">
+    </section>
+
+    <hr>
+
+    <!-- Order Summary Table -->
+    <section>
+        <h3>Order Summary</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Product Description</th>
+                    <th>Quantity</th>
+                    <th>Unit Price (Rs)</th>
+                    <th>Total Price (Rs)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wireless Noise-Canceling Headphones</td>
+                    <td>1</td>
+                    <td>1490.99</td>
+                    <td>1490.99</td>
+                </tr>
+                <tr>
+                    <td>Ergonomic Mechanical Keyboard</td>
+                    <td>1</td>
+                    <td>890.50</td>
+                    <td>890.50</td>
+                </tr>
+                <tr>
+                    <td>USB-C Fast Charging Cable (2-Pack)</td>
+                    <td>2</td>
+                    <td>120.50</td>
+                    <td>241.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" ><strong>Subtotal:</strong></td>
+                    <td><strong>Rs. 2622.49</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="3" ><strong>Estimated Shipping:</strong></td>
+                    <td><strong>Rs. 100.00</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="3" ><strong>Grand Total:</strong></td>
+                    <td><strong>Rs. 2722.49</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Main Checkout Form -->
+    <main>
+        <form action="https://www.example.com/place-order" method="POST">
+            
+            <!-- Section 1: Customer Contact Information -->
+            
+                <legend><strong>1. Customer Contact Details</strong></legend>
+                
+                <p>
+                    <label for="cust_name">Full Name:*</label><br>
+                    <input type="text" id="cust_name" name="customer_name" required minlength="3" maxlength="60" autocomplete="name" placeholder="e.g., Sukhpreet Singh">
+                </p>
+
+                <p>
+                    <label for="cust_email">Email Address:*</label><br>
+                    <input type="email" id="cust_email" name="customer_email" required autocomplete="email" placeholder="sukhpreet.singh@example.com">
+                </p>
+
+                <p>
+                    <label for="cust_phone">Mobile Phone Number:*</label><br>
+                    <input type="tel" id="cust_phone" name="customer_phone" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number" autocomplete="tel" placeholder="10-digit mobile number">
+                </p>
+            
+
+            <br>
+
+            <!-- Section 2: Delivery Address -->
+            
+                <legend><strong>2. Shipping / Delivery Address</strong></legend>
+
+                <p>
+                    <label for="street_address">House Number & Street Address:*</label><br>
+                    <input type="text" id="street_address" name="street_address" required minlength="5" maxlength="100" autocomplete="shipping street-address" placeholder="123 Main Street, Apt 4B">
+                </p>
+
+                <p>
+                    <label for="city">City:*</label><br>
+                    <input type="text" id="city" name="city" required minlength="2" maxlength="50" autocomplete="shipping address-level2" placeholder="e.g., New delhi">
+                </p>
+
+                <p>
+                    <label for="state">State / Province:*</label><br>
+                    <select id="state" name="state" required autocomplete="shipping address-level1">
+                        <option value="">-- Select State --</option>
+                        <option value="DL">New Delhi</option>
+                        <option value="PB">Punjab</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="KL">Kerela</option>
+                        <option value="HR">Haryana</option>
+                        <option value="OTHER">Other / International</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="postal_code">ZIP / Postal Code:*</label><br>
+                    <input type="text" id="postal_code" name="postal_code" required pattern="[0-9]{5,6}" title="Enter a 5 or 6-digit postal code" autocomplete="shipping postal-code" placeholder="12601">
+                </p>
+
+                <p>
+                    <label for="country">Country:*</label><br>
+                    <select id="country" name="country" required autocomplete="shipping country">
+                        <option value="">-- Select Country --</option>
+                        <option value="IN">India</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="delivery_notes">Delivery Instructions (Optional):</label><br>
+                    <textarea id="delivery_notes" name="delivery_instructions" rows="3" cols="50" maxlength="250" placeholder="Gate code, leave package at front door, call on arrival, etc."></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="same_billing" name="same_billing_address" value="true" checked>
+                    <label for="same_billing">Billing address is the same as shipping address</label>
+                </p>
+            
+
+            <br>
+
+            <!-- Section 3: Shipping Options & Promotions -->
+            
+                <legend><strong>3. Shipping Method & Coupon Code</strong></legend>
+
+                <p>
+                    <label>Select Delivery Speed:*</label><br>
+                    <input type="radio" id="ship_standard" name="shipping_method" value="standard" checked required>
+                    <label for="ship_standard">Standard Ground Shipping (3-5 Business Days) - Rs.150.00</label><br>
+
+                    <input type="radio" id="ship_express" name="shipping_method" value="express">
+                    <label for="ship_express">Express Shipping (1-2 Business Days) - Rs.250.00</label><br>
+
+                    <input type="radio" id="ship_sameday" name="shipping_method" value="sameday">
+                    <label for="ship_sameday">Same-Day Courier Delivery - Rs.400.00</label>
+                </p>
+
+                <p>
+                    <label for="promo_code">Promo / Coupon Code (Optional):</label><br>
+                    <input type="text" id="promo_code" name="promo_code" minlength="4" maxlength="12" pattern="[A-Za-z0-9]{4,12}" title="Promo codes must be 4 to 12 alphanumeric characters" placeholder="e.g., SAVE10">
+                </p>
+            
+
+            <br>
+
+            <!-- Section 4: Payment Details -->
+            
+                <legend><strong>4. Payment Information</strong></legend>
+
+                <p>
+                    <label>Select Payment Method:*</label><br>
+                    <input type="radio" id="pay_card" name="payment_method" value="credit_card" checked required>
+                    <label for="pay_card">Credit / Debit Card</label><br>
+
+                    <input type="radio" id="pay_upi" name="payment_method" value="upi">
+                    <label for="pay_upi">UPI / Online Wallet</label><br>
+
+                    <input type="radio" id="pay_cod" name="payment_method" value="cod">
+                    <label for="pay_cod">Cash on Delivery (COD)</label>
+                </p>
+
+                <hr>
+
+                <!-- Card Details Subsection -->
+                <p><strong>Credit/Debit Card Details:</strong></p>
+
+                <p>
+                    <label for="card_name">Cardholder Name:*</label><br>
+                    <input type="text" id="card_name" name="card_name" required minlength="3" maxlength="60" autocomplete="cc-name" placeholder="Name as printed on card">
+                </p>
+
+                <p>
+                    <label for="card_number">Card Number:*</label><br>
+                    <input type="text" id="card_number" name="card_number" required pattern="[0-9]{16}" title="Please enter a valid 16-digit card number" autocomplete="cc-number" placeholder="16-digit card number">
+                </p>
+
+                <p>
+                    <label for="card_expiry">Expiry Date:*</label><br>
+                    <input type="month" id="card_expiry" name="card_expiry" required min="2026-09" autocomplete="cc-exp">
+                </p>
+
+                <p>
+                    <label for="card_cvv">Security Code (CVV):*</label><br>
+                    <input type="password" id="card_cvv" name="card_cvv" required pattern="[0-9]{3,4}" title="3 or 4 digit security code on back of card" maxlength="4" autocomplete="cc-csc" placeholder="3 or 4 digits">
+                </p>
+            
+
+            <br>
+
+            <!-- Section 5: Terms, Order Confirmation & Actions -->
+            
+                <legend><strong>5. Review & Order Submission</strong></legend>
+
+                <p>
+                    <input type="checkbox" id="terms_agree" name="terms_agreed" value="yes" required>
+                    <label for="terms_agree">I agree to the <a href="https://www.flipkart.com/pages/privacypolicy" target="_blank">Terms & Conditions</a> and <a href="https://www.flipkart.com/pages/privacypolicy" target="_blank">Privacy Policy</a>.*</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="order_confirm" name="order_confirmed" value="yes" required>
+                    <label for="order_confirm">I confirm that all product selections and delivery addresses entered above are accurate.*</label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Place Order (Rs. 2722.49)">
+                    <input type="reset" value="Clear / Reset Checkout Form">
+                </p>
+            
+
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p> & 2026 ShopNow Online Retail Inc. All rights reserved. | Need Help? <a href="https://www.example.com/support" target="_blank">Customer Support</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Leave Request Form - HR Portal</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Corporate Human Resources Portal</h1>
+        <h2>Employee Leave Request Application</h2>
+        <p>Please complete the form below to submit your official leave or remote work request for HR and Managerial review. All requests must adhere to the company's annual leave policy and be submitted at least 3 business days in advance for planned absences.</p>
+        <p>Need to check your current PTO balance? Visit the <a href="https://selfservice.employerondemand.com/" target="_blank">Employee Self-Service Portal</a> or contact HR at <a href="https://www.greythr.com/">hr@company.com</a>.</p>
+    </header>
+
+    <hr>
+
+    <!-- Leave Policy Summary Table -->
+    <section>
+        <h3><u> > Company Leave Policy Guidelines & Categories</u></h3>
+        <p>Refer to the breakdown below before selecting your leave category to ensure compliance with company policy:</p>
+        
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Leave Category</th>
+                    <th>Annual Entitlement</th>
+                    <th>Advance Notice Required</th>
+                    <th>Documentation Required?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Casual Leave (CL)</strong></td>
+                    <td>12 Days / Year</td>
+                    <td>Minimum 24 Hours</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><strong>Sick Leave (SL)</strong></td>
+                    <td>10 Days / Year</td>
+                    <td>Same Day (by 9:00 AM)</td>
+                    <td>Yes (If consecutive days > 2)</td>
+                </tr>
+                <tr>
+                    <td><strong>Earned / Annual Leave (EL)</strong></td>
+                    <td>15 Days / Year</td>
+                    <td>Minimum 14 Days</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><strong>Work From Home (WFH)</strong></td>
+                    <td>As per Team Policy</td>
+                    <td>Minimum 48 Hours</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><strong>Other (Maternity, Paternity, Bereavement)</strong></td>
+                    <td>As per Statutory Guidelines</td>
+                    <td>As soon as practical</td>
+                    <td>Yes (Supporting certificates)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Main Leave Application Form -->
+    <main>
+        <h3><u> > Leave Request Form</u></h3>
+        <form action="https://hrportal.company.com/submit-leave-request" method="POST" enctype="multipart/form-data">
+            
+            <!-- Section 1: Employee Information -->
+            
+                <legend><strong>1. Employee Identification & Department</strong></legend>
+                
+                <p>
+                    <label for="company_name">Company Name:</label><br>
+                    <input type="text" id="company_name" name="company_name" value="JP Morgan" readonly disabled>
+                    <small><em></em></small>
+                </p>
+
+                <p>
+                    <label for="emp_name">Full Employee Name:*</label><br>
+                    <input type="text" id="emp_name" name="employee_name" required minlength="2" maxlength="60" placeholder="e.g., Sukhpreet Singh">
+                </p>
+
+                <p>
+                    <label for="emp_id">Employee ID Number:*</label><br>
+                    <input type="text" id="emp_id" name="employee_id" required pattern="EMP-[0-9]{5}" title="Format must follow: EMP-12345" placeholder="EMP-12345">
+                    
+                </p>
+
+                <p>
+                    <label for="work_email">Official Email Address:*</label><br>
+                    <input type="email" id="work_email" name="work_email" required placeholder="sukhpreet.singh@company.com">
+                </p>
+
+                <p>
+                    <label for="department">Department / Team:*</label><br>
+                    <select id="department" name="department" required>
+                        <option value="">-- Select Department --</option>
+                        <option value="engineering">Engineering & Software Development</option>
+                        <option value="human_resources">Human Resources</option>
+                        <option value="finance">Finance & Accounting</option>
+                        <option value="marketing">Marketing & Communications</option>
+                        <option value="product_mgmt">Product Management</option>
+                        <option value="customer_support">Customer Support & Success</option>
+                        <option value="sales">Sales & Business Development</option>
+                    </select>
+                </p>
+            
+
+             <hr>
+            <br>
+
+            <!-- Section 2: Leave Request Details -->
+            
+                <legend><strong>2. Leave Schedule & Category Selection</strong></legend>
+
+                <p>
+                    <label for="leave_type">Type of Leave:*</label><br>
+                    <select id="leave_type" name="leave_type" required>
+                        <option value="">-- Choose Leave Type --</option>
+                        <option value="casual_leave">Casual Leave (CL)</option>
+                        <option value="sick_leave">Sick Leave (SL)</option>
+                        <option value="earned_leave">Earned / Privilege Leave (EL)</option>
+                        <option value="wfh">Work From Home (WFH)</option>
+                        <option value="other">Other (Maternity / Paternity / Bereavement)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="start_date">Leave Start Date:*</label><br>
+                    <input type="date" id="start_date" name="start_date" required min="2026-09-01">
+                </p>
+
+                <p>
+                    <label for="end_date">Leave End Date:*</label><br>
+                    <input type="date" id="end_date" name="end_date" required min="2026-09-01">
+                </p>
+
+                <p>
+                    <label for="total_days">Total Number of Leave Days:*</label><br>
+                    <input type="number" id="total_days" name="total_days" required min="0.5" max="90" step="0.5" value="1.0">
+                    
+                </p>
+
+                <p>
+                    <label for="leave_reason">Detailed Reason for Absence:*</label><br>
+                    <textarea id="leave_reason" name="leave_reason" rows="4" cols="55" required minlength="15" maxlength="500" placeholder="Please provide sufficient details regarding the reason for your leave application..."></textarea>
+                </p>
+
+                <p>
+                    <label for="attachment">Attach Supporting Document (Optional / Required for SL > 2 Days):</label><br>
+                    <input type="file" id="attachment" name="supporting_document" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx">
+                    <small><em>(Allowed files: PDF,JPG,DOCX up to 5MB)</em></small>
+                </p>
+            
+             <hr>
+            <br>
+
+            <!-- Section 3: Availability & Emergency Contact -->
+            
+                <legend><strong>3. Reachability & Emergency Coverage</strong></legend>
+
+                <p>
+                    <label>Will you be reachable via phone/email during your leave period?*</label><br>
+                    <input type="radio" id="reachable_yes" name="is_reachable" value="yes" required>
+                    <label for="reachable_yes">Yes, available for urgent communications</label><br>
+
+                    <input type="radio" id="reachable_limited" name="is_reachable" value="limited">
+                    <label for="reachable_limited">Limited / Urgent matters only via email</label><br>
+
+                    <input type="radio" id="reachable_no" name="is_reachable" value="no">
+                    <label for="reachable_no">No, completely offline (Emergency contacts only)</label>
+                </p>
+
+                <p>
+                    <label for="alt_contact">Alternate Emergency Contact Number:*</label><br>
+                    <input type="tel" id="alt_contact" name="alternate_contact" required pattern="[0-9]{10}" title="Must enter a valid 10-digit emergency phone number" placeholder="10-digit mobile number">
+                </p>
+
+                <p>
+                    <label for="handover_emp">Task Handover Colleague Name (Optional):</label><br>
+                    <input type="text" id="handover_emp" name="handover_employee" placeholder="e.g., sukhpreet singh (Team Member)">
+                </p>
+        
+             <hr>           
+            <br>
+
+            <!-- Section 4: Employee Self-Declaration & Submission -->
+            
+                <legend><strong>4. Declaration & Submission</strong></legend>
+
+                <p>
+                    <input type="checkbox" id="declaration" name="employee_declaration" value="acknowledged" required>
+                    <label for="declaration">I hereby declare that the information provided is accurate and that I have aligned with my immediate supervisor regarding pending tasks and operational continuity.*</label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit Request for Approval">
+                    <input type="reset" value="Clear / Reset Form">
+                </p>
+            
+
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p> & 2026 Acme Corporation. HR Management Information System. | Confidential Internal Document</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking - Singh Hospital</title>
+</head>
+<body>
+
+    <header>
+        <h1>Singh Hospital</h1>
+        <p>Book your appointment online easily. Please fill out the form below with your contact details, preferred schedule, and visit information. Our medical team will confirm your booking via your preferred communication method.</p>
+        <p><strong>Emergency Contact:</strong> If you are experiencing a life-threatening medical condition, please do not use this form. Call our emergency hotline immediately at <a href="tel:18005550199">1-800-555-0199</a> or visit our <a href="https://www.justdial.com/Noida/Singh-Hospital-Jhajhar/011PXX11-XX11-230102150318-T9Q1_BZDET" target="_blank">Singh Hospital Emergency Services Page</a>.</p>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2><u>Singh Hospital - Clinic Operating Hours</u></h2>
+        <table border="1" cellpadding="5" cellspacing="2">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Morning Hours</th>
+                    <th>Evening Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>08:00 AM - 12:00 PM</td>
+                    <td>02:00 PM - 08:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>09:00 AM - 01:00 PM</td>
+                    <td>03:00 PM - 06:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed (Emergency Only)</td>
+                    <td>Closed (Emergency Only)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <main>
+        <h2><u>Patient Appointment Booking Form</u></h2>
+        <form action="https://www.singhhospital.com/submit-appointment" method="POST">
+            
+    
+                <legend><h3> > Patient Details</h3></legend>
+                
+                <p>
+                    <label for="patient_id">Patient ID (Optional - Existing Patients Only):</label><br>
+                    <input type="text" id="patient_id" name="patient_id" pattern="SH-[0-9]{5}" title="Format: SH-12345" placeholder="SH-12345">
+                </p>
+
+                <p>
+                    <label for="full_name">Full Name:*</label><br>
+                    <input type="text" id="full_name" name="full_name" required minlength="2" maxlength="60" placeholder="e.g.,sukhpreet singh">
+                </p>
+
+                <p>
+                    <label for="email">Email Address:*</label><br>
+                    <input type="email" id="email" name="email" required placeholder="sukhpreet@example.com">
+                </p>
+
+                <p>
+                    <label for="mobile">Mobile Phone Number:*</label><br>
+                    <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" placeholder="10-digit number">
+                </p>
+
+                <p>
+                    <label for="dob">Date of Birth:*</label><br>
+                    <input type="date" id="dob" name="dob" required max="2026-08-31">
+                </p>
+            <hr>
+            <br>
+                 <legend><h3> > Appointment Preferences </h3></legend>
+
+                <p>
+                    <label for="appointment_date">Preferred Date:*</label><br>
+                    <input type="date" id="appointment_date" name="appointment_date" required min="2026-09-01">
+                </p>
+
+                <p>
+                    <label for="appointment_time">Preferred Time Slot:*</label><br>
+                    <input type="time" id="appointment_time" name="appointment_time" required min="08:00" max="20:00">
+                </p>
+
+                <p>
+                    <label for="doctor">Select Doctor / Specialty:*</label><br>
+                    <select id="doctor" name="doctor" required>
+                        <option value="">-- Please Select a Specialist --</option>
+                        <option value="dr_singh_cardiology">Dr. Rajesh Singh - Cardiology</option>
+                        <option value="dr_patel_pediatrics">Dr. Anita Patel - Pediatrics</option>
+                        <option value="dr_sharma_orthopedics">Dr. Vikram Sharma - Orthopedics</option>
+                        <option value="dr_gupta_dermatology">Dr. Meera Gupta - Dermatology</option>
+                        <option value="dr_khan_neurology">Dr. Tariq Khan - Neurology</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Visit Type:*</label><br>
+                    <input type="radio" id="new_patient" name="visit_type" value="new_patient" required>
+                    <label for="new_patient">New Patient</label><br>
+
+                    <input type="radio" id="follow_up" name="visit_type" value="follow_up">
+                    <label for="follow_up">Follow-up</label><br>
+
+                    <input type="radio" id="consultation" name="visit_type" value="consultation">
+                    <label for="consultation">Consultation</label><br>
+
+                    <input type="radio" id="emergency" name="visit_type" value="emergency">
+                    <label for="emergency">Urgent / Emergency</label>
+                </p>
+
+                <p>
+                    <label>Preferred Communication Method:*</label><br>
+                    <input type="radio" id="comm_email" name="preferred_communication" value="email" required>
+                    <label for="comm_email">Email</label><br>
+
+                    <input type="radio" id="comm_phone" name="preferred_communication" value="phone">
+                    <label for="comm_phone">Phone Call</label><br>
+
+                    <input type="radio" id="comm_sms" name="preferred_communication" value="sms">
+                    <label for="comm_sms">SMS / Text Message</label>
+                </p>
+
+                <p>
+                    <label for="reason">Reason for Visit / Symptoms:*</label><br>
+                    <textarea id="reason" name="reason" rows="5" cols="40" required minlength="10" maxlength="500" placeholder="Please briefly describe your medical concern or reason for booking..."></textarea>
+                </p>
+                      
+            <hr>
+            <br>
+
+            
+                <legend><h3> > Confirmation</h3></legend>
+                <p>
+                    <input type="checkbox" id="terms" name="terms_accepted" value="yes" required>
+                    <label for="terms">I accept the <a href="https://www.shriramsinghhospital.com/appointment" target="_blank">Singh Hospital Appointment & Cancellation Policy</a>.*</label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Book Appointment">
+                    <input type="reset" value="Reset Form">
+                </p>
+            
+
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <p> & 2026 Singh Hospital. All rights reserved. | <a href="https://www.singhhospital.com/contact">Contact Us-18005550199</a></p>
+    </footer>
+
+</body>
+</html>

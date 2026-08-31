@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Admission Application Form</title>
+</head>
+<body>
+
+    <h1>GLA University, Greater Noida Campus</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3CiotMLJaz7_kbhbHLAlthua3pIGhDf9Q6jZv93ndPQ&s=10" alt="GLA University Campus Building" width="500" height="350">
+    
+    <br><br>
+
+    <h2>Online Admission Application Form</h2>
+    <p>
+        Welcome to the admission portal of GLA University, Greater Noida Campus. Please fill in
+        the form below carefully and accurately. Fields marked as required must be completed
+        before the application can be submitted. For any queries regarding the admission process,
+        please visit our official website at
+        <a href="https://www.gla.ac.in/">https://www.gla.ac.in/</a>.
+    </p>
+
+    <hr>
+
+    <form action="/submit-admission-form" method="post">
+
+        <h2>1. Personal Details</h2>
+
+        <p>
+            <label for="fullname">Full Name (as per certificates):</label><br>
+            <input type="text" id="fullname" name="student_full_name" placeholder="e.g.sukhpreet singh"
+                   minlength="3" maxlength="60" required>
+        </p>
+
+        <p>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="date_of_birth"
+                   min="2003-01-01" max="2011-12-31" required>
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="student_email" placeholder="sukhpreet@example.com" required>
+        </p>
+
+        <p>
+            <label for="mobile">Mobile Number:</label><br>
+            <input type="tel" id="mobile" name="student_mobile" placeholder="10-digit mobile number"
+                   pattern="[0-9]{10}" minlength="10" maxlength="10" required>
+        </p>
+
+        <p>
+            <label for="pin">Application PIN (4-digit, for tracking your application):</label><br>
+            <input type="password" id="pin" name="application_pin"
+                   minlength="4" maxlength="4" pattern="[0-9]{4}" required>
+        </p>
+
+        <p>Gender:</p>
+        <p>
+            <input type="radio" id="gender-male" name="gender" value="Male" required>
+            <label for="gender-male">Male</label><br>
+
+            <input type="radio" id="gender-female" name="gender" value="Female">
+            <label for="gender-female">Female</label><br>
+
+            <input type="radio" id="gender-other" name="gender" value="Other">
+            <label for="gender-other">Other</label>
+        </p>
+
+        <p>
+            <label for="category">Category:</label><br>
+            <select id="category" name="applicant_category" required>
+                <option value="">-- Select Category --</option>
+                <option value="General">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="EWS">EWS</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="address">Permanent Address:</label><br>
+            <textarea id="address" name="permanent_address" rows="4" cols="40"
+                      placeholder="House No., Street, City, State, PIN Code" required></textarea>
+        </p>
+
+           <hr>
+
+        <h2>2. Course Details</h2>
+
+        <p>
+            <label for="course">Course/Program Applying For:</label><br>
+            <select id="course" name="course_applied" required>
+                <option value="">-- Select a Course --</option>
+                <option value="BSc-CS">B.Sc. Computer Science</option>
+                <option value="BCom">B.Com</option>
+                <option value="BA-English">B.A. English</option>
+                <option value="BBA">BBA</option>
+                <option value="BSc-Physics">B.Sc. Physics</option>
+                <option value="BA-Economics">B.A. Economics</option>
+            </select>
+        </p>
+
+        <p>Preferred Shift (choose one):</p>
+        <p>
+            <input type="radio" id="shift-morning" name="shift_preference" value="Morning" required>
+            <label for="shift-morning">Morning</label>
+
+            <input type="radio" id="shift-afternoon" name="shift_preference" value="Afternoon">
+            <label for="shift-afternoon">Afternoon</label>
+        </p>
+
+        <p>Extra-Curricular Interests (choose all that apply):</p>
+        <p>
+            <input type="checkbox" id="interest-sports" name="extra_curricular" value="Sports">
+            <label for="interest-sports">Sports</label><br>
+
+            <input type="checkbox" id="interest-music" name="extra_curricular" value="Music">
+            <label for="interest-music">Music</label><br>
+
+            <input type="checkbox" id="interest-debate" name="extra_curricular" value="Debate">
+            <label for="interest-debate">Debate</label><br>
+
+            <input type="checkbox" id="interest-ncc" name="extra_curricular" value="NCC/NSS">
+            <label for="interest-ncc">NCC / NSS</label>
+        </p>
+
+        <hr>
+
+        <h2>3. Previous Academic Qualification</h2>
+
+        <p>
+            <label for="qualification">Previous Qualification (e.g. 12th Standard):</label><br>
+            <input type="text" id="qualification" name="previous_qualification"
+                   placeholder="e.g. Senior Secondary (12th)" maxlength="50" required>
+        </p>
+
+        <p>
+            <label for="school">School/College Attended:</label><br>
+            <input type="text" id="school" name="previous_institution_name"
+                   placeholder="Name of School/College" maxlength="80" required>
+        </p>
+
+        <p>
+            <label for="percentage">Percentage/CGPA Obtained (out of 100):</label><br>
+            <input type="number" id="percentage" name="qualifying_percentage"
+                   min="0" max="100" step="0.01" placeholder="e.g. 87.5" required>
+        </p>
+
+        <p>
+            <label for="passing-year">Year of Passing:</label><br>
+            <input type="number" id="passing-year" name="year_of_passing"
+                   min="2015" max="2026" step="1" required>
+        </p>
+
+        <hr>
+
+        <h2>4. Document Upload</h2>
+
+        <p>
+            <label for="marksheet">Upload Marksheet/Certificate (PDF or Image):</label><br>
+            <input type="file" id="marksheet" name="admission_document"
+                   accept=".pdf,.jpg,.jpeg,.png" required>
+        </p>
+
+        <hr>
+
+        <h2>5. Reference Information</h2>
+        <p>Documents commonly required at the time of admission include the following:</p>
+        <table border="1" cellpadding="6" cellspacing="0">
+            <tr>
+                <th>Document</th>
+                <th>Accepted Format</th>
+                <th>Mandatory</th>
+                <th>Remarks</th>
+            </tr>
+            <tr>
+                <td>10th Marksheet</td>
+                <td>PDF</td>
+                <td>Yes</td>
+                <td>Original copy</td>
+            </tr>
+            <tr>
+                <td>12th Marksheet</td>
+                <td>PDF</td>
+                <td>Yes</td>
+                <td>Original copy</td>
+            </tr>
+            <tr>
+                <td>Transfer Certificate</td>
+                <td>PDF</td>
+                <td>Yes</td>
+                <td>Issued by previous institution</td>
+            </tr>
+            <tr>
+                <td>Category Certificate</td>
+                <td>PDF</td>
+                <td>If applicable</td>
+                <td>Required for SC/ST/OBC/EWS candidates</td>
+            </tr>
+            <tr>
+                <td>Passport Size Photograph</td>
+                <td>JPG </td>
+                <td>Yes</td>
+                <td>Recent, white background</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>6. Declaration</h2>
+
+        <p>
+            <input type="checkbox" id="declaration" name="declaration_consent" value="Agreed" required>
+            <label for="declaration">
+                I hereby declare that the information provided above is true and correct to the
+                best of my knowledge, and I agree to abide by the rules and regulations of the college.
+            </label>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit Application">
+            <input type="reset" value="Clear Form">
+        </p>
+
+    </form>
+
+    <hr>
+    <p><em>For assistance, contact the admissions office or visit the official GLA University website at
+    <a href="https://www.gla.ac.in/">https://www.gla.ac.in/</a> for the latest prospectus and admission updates.</em></p>
+
+</body>
+</html>

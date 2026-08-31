@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration & Course Enrollment</title>
+</head>
+<body>
+
+    <header>
+        <h1> Digital TechAcademy - Student Course Enrollment</h1>
+        <p>Welcome to TechAcademy! Complete this enrollment form to register your account, select your preferred technical course, and customize your learning path for the upcoming academic session.</p>
+        <p>Need more details before enrolling? Visit our <a href="https://www.w3schools.com/" target="_blank">Comprehensive Course Catalog & Syllabus Guide</a>.</p>
+    </header>
+
+    <hr>
+
+    <section>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBRSFEuq5c8KVsRoO41ig6ZkZ-mgWbxxBOk1PfuwBJEA&s=10" alt="Students engaging in technical online learning and coding" width="500" height="400">
+    </section>
+
+    <hr>
+
+    <main>
+        <h2>Registration & Enrollment Form</h2>
+        <form action="https://www.example.com/register" method="POST">
+
+            
+                <legend><h3>>Account & Personal Information</h3></legend>
+
+                <p>
+                    <label for="full_name">Full Name:*</label><br>
+                    <input type="text" id="full_name" name="full_name" required minlength="2" maxlength="50" placeholder="e.g. Sukhpreet Singh">
+                </p>
+
+                <p>
+                    <label for="email">Email Address:*</label><br>
+                    <input type="email" id="email" name="email" required placeholder="sukhpreet@example.com">
+                </p>
+
+                <p>
+                    <label for="password">Account Password:*</label><br>
+                    <input type="password" id="password" name="password" required minlength="8" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 8 characters, including one uppercase letter, one lowercase letter, and one number.">
+                </p>
+
+                <p>
+                    <label for="mobile">Mobile Number:*</label><br>
+                    <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number." placeholder="10-digit phone number">
+                </p>
+
+                <p>
+                    <label for="dob">Date of Birth:*</label><br>
+                    <input type="date" id="dob" name="dob" required max="2012-12-31">
+                </p>
+            
+             <hr>
+            <br>
+
+            
+                <legend><h3>>Academic Background & Experience</h3></legend>
+
+                <p>
+                    <label for="education_level">:Highest Education Level:*</label><br>
+                    <select id="education_level" name="education_level" required>
+                        <option value="">-- Select Qualification --</option>
+                        <option value="high_school">High School</option>
+                        <option value="undergraduate">Undergraduate Degree</option>
+                        <option value="postgraduate">Postgraduate Degree</option>
+                        <option value="doctorate">Doctorate/PhD</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="institution">College / Institution Name:*</label><br>
+                    <input type="text" id="institution" name="institution" required minlength="3" maxlength="100" placeholder="e.g. Stanford University">
+                </p>
+
+                <p>
+                    <label for="current_year">Current Academic Year / Semester:*</label><br>
+                    <input type="text" id="current_year" name="current_year" required placeholder="e.g. 3rd Year / Semester 5">
+                </p>
+
+                <p>
+                    <label for="coding_experience">Programming Experience (in years):*</label><br>
+                    <input type="text" id="coding_experience" name="coding_experience" required placeholder >
+                </p>
+
+                <p>
+                    <label for="portfolio_url">GitHub / Portfolio URL (Optional):</label><br>
+                    <input type="url" id="portfolio_url" name="portfolio_url" placeholder="https://github.com/yourusername">
+                </p>
+            
+             <hr>
+            <br>
+
+            
+                <legend><h3>>Course & Learning Preferences</h3></legend>
+
+                <p>
+                    <label for="course_select">Select Course:*</label><br>
+                    <select id="course_select" name="course_select" required>
+                        <option value="">-- Choose a Course --</option>
+                        <option value="fullstack_web">Full-Stack Web Development</option>
+                        <option value="python_data_science">Python & Data Science</option>
+                        <option value="java_microservices">Java Enterprise & Microservices</option>
+                        <option value="dsa_algos">Data Structures & Algorithms</option>
+                        <option value="database_engineering">Database Engineering & SQL</option>
+                        <option value="cloud_devops">Cloud Computing & DevOps</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="batch_session">Select Preferred Batch / Session:*</label><br>
+                    <select id="batch_session" name="batch_session" required>
+                        <option value="">-- Choose a Session --</option>
+                        <option value="weekday_morning">Weekday Morning (08:00 AM - 11:00 AM)</option>
+                        <option value="weekday_evening">Weekday Evening (06:00 PM - 09:00 PM)</option>
+                        <option value="weekend_batch">Weekend Intensive (Sat-Sun 10:00 AM - 04:00 PM)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="learning_mode">Learning Mode:*</label><br>
+                    <input type="radio" id="mode_online" name="learning_mode" value="online" required>
+                    <label for="mode_online">Online</label><br>
+
+                    <input type="radio" id="mode_offline" name="learning_mode" value="offline">
+                    <label for="mode_offline">Offline (On-Campus)</label><br>
+
+                    <input type="radio" id="mode_hybrid" name="learning_mode" value="hybrid">
+                    <label for="mode_hybrid">Hybrid</label>
+                </p>
+
+                <p>
+                    <label for="technical_interests">Areas of Technical Interest (Select all that apply):</label><br>
+                    <input type="checkbox" id="interest_java" name="technical_interests" value="java">
+                    <label for="interest_java">Java</label><br>
+
+                    <input type="checkbox" id="interest_python" name="technical_interests" value="python">
+                    <label for="interest_python">Python</label><br>
+
+                    <input type="checkbox" id="interest_webdev" name="technical_interests" value="web_development">
+                    <label for="interest_webdev">Web Development</label><br>
+
+                    <input type="checkbox" id="interest_dsa" name="technical_interests" value="dsa">
+                    <label for="interest_dsa">Data Structures</label><br>
+
+                    <input type="checkbox" id="interest_db" name="technical_interests" value="database">
+                    <label for="interest_db">Database Management</label>
+                </p>
+
+                <p>
+                    <label for="learning_goals">Learning Goals & Motivation:*</label><br>
+                    <textarea id="learning_goals" name="learning_goals" rows="5" cols="50" required minlength="20" maxlength="500" placeholder="Describe what you aim to achieve from this course..."></textarea>
+                </p>
+            
+            <hr>
+            <br>
+
+            
+                <legend><h3>Declaration & Submission</h3></legend>
+                <p>
+                    <input type="checkbox" id="confirm_terms" name="confirm_terms" value="accepted" required>
+                    <label for="confirm_terms">I confirm that the details provided are accurate and agree to the platform enrollment terms.*</label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit Enrollment">
+                    <input type="reset" value="Reset Form">
+                </p>
+        
+
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <p> & 2026 Digital TechAcademy Online Education. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
