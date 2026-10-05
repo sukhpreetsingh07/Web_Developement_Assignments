@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>The Periodic Table of Elements</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100px;
+      background-color:white;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-weight: normal;
+      letter-spacing: 1px;
+      font-size: 24px;
+      color:black;
+      text-transform: uppercase;
+    }
+
+    .table-container {
+      display: grid;
+      grid-template-columns: repeat(18, 38px);
+      grid-template-rows: repeat(7, 38px);
+      gap: 6px;
+      margin-bottom: 50px;
+    }
+
+    .cell {
+      border: 1px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 14px;
+      color:black;
+    }
+
+    
+    .red-dark { background-color: red; color: #fff; }
+    .salmon { background-color: salmon; }
+    .olive-green { background-color: olive; }
+    .blue { background-color: blue; }
+    .orange { background-color: orange; }
+    .purple { background-color: purple; }
+    .pink-magenta { background-color: pink; }
+    .yellow { background-color: yellow; }
+    .peach { background-color: peach; border: 2px solid black; }
+    .grey-dark { background-color: grey; }
+
+    
+    .cell.si {
+      grid-column: 3 / span 3;
+      grid-row: 1 / span 3;
+      background-color: olive;
+      border: 1px solid black;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 8px;
+    }
+
+    .si .number {
+      position: absolute;
+      top: 6px;
+      right: 8px;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .si .symbol {
+      font-size: 36px;
+      font-weight: normal;
+      margin-top: 5px;
+    }
+
+    .si .name {
+      font-size: 11px;
+      font-weight: normal;
+      margin-top: auto;
+    }
+
+    
+    .bottom-table {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+    }
+
+    .bottom-row {
+      display: flex;
+    }
+
+    .bottom-cell {
+      width: 32px;
+      height: 22px;
+      border: 0.5px solid grey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      color: white;
+    }
+
+    .row-1 .bottom-cell {
+      background-color: darkgreen;
+    }
+
+    .row-2 .bottom-cell {
+      background-color: parrotgreen;
+      color: black;
+    }
+
+    .bottom-cell.label {
+      justify-content: flex-start;
+      padding-left: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>THE PERIODIC TABLE OF ELEMENTS</h1>
+
+  
+  <div class="table-container">
+
+    
+    <div class="cell red-dark" style="grid-column: 1; grid-row: 1;">H</div>
+    
+    
+    <div class="cell si">
+      <span class="number">14</span>
+      <span class="symbol">Si</span>
+      <span class="name">Silicon</span>
+    </div>
+
+    <div class="cell yellow" style="grid-column: 18; grid-row: 1;"></div>
+
+    
+    <div class="cell olive-green" style="grid-column: 1; grid-row: 2;"></div>
+    <div class="cell salmon" style="grid-column: 2; grid-row: 2;">4</div>
+    
+    <div class="cell purple" style="grid-column: 13; grid-row: 2;"></div>
+    <div class="cell olive-green" style="grid-column: 14; grid-row: 2;"></div>
+    <div class="cell olive-green" style="grid-column: 15; grid-row: 2;"></div>
+    <div class="cell olive-green" style="grid-column: 16; grid-row: 2;"></div>
+    <div class="cell pink-magenta" style="grid-column: 17; grid-row: 2;"></div>
+    <div class="cell yellow" style="grid-column: 18; grid-row: 2;"></div>
+
+    
+    <div class="cell olive-green" style="grid-column: 1; grid-row: 3;"></div>
+    <div class="cell salmon" style="grid-column: 2; grid-row: 3;">12</div>
+
+    <div class="cell orange" style="grid-column: 13; grid-row: 3;"></div>
+    <div class="cell purple" style="grid-column: 14; grid-row: 3;"></div>
+    <div class="cell olive-green" style="grid-column: 15; grid-row: 3;"></div>
+    <div class="cell olive-green" style="grid-column: 16; grid-row: 3;"></div>
+    <div class="cell pink-magenta" style="grid-column: 17; grid-row: 3;"></div>
+    <div class="cell yellow" style="grid-column: 18; grid-row: 3;"></div>
+
+    
+    <div class="cell olive-green" style="grid-column: 1; grid-row: 4;"></div>
+    <div class="cell salmon" style="grid-column: 2; grid-row: 4;">20</div>
+
+    <div class="cell blue" style="grid-column: 4; grid-row: 4;"></div>
+    <div class="cell blue" style="grid-column: 5; grid-row: 4;"></div>
+    <div class="cell blue" style="grid-column: 6; grid-row: 4;"></div>
+    <div class="cell blue" style="grid-column: 7; grid-row: 4;"></div>
+    <div class="cell blue" style="grid-column: 8; grid-row: 4;"></div>
+    <div class="cell blue" style="grid-column: 9; grid-row: 4;"></div>
+    <div class="cell blue" style="grid-column: 10; grid-row: 4;"></div>
+    <div class="cell blue" style="grid-column: 11; grid-row: 4;"></div>
+    <div class="cell blue" style="grid-column: 12; grid-row: 4;"></div>
+
+    <div class="cell orange" style="grid-column: 13; grid-row: 4;"></div>
+    <div class="cell purple" style="grid-column: 14; grid-row: 4;"></div>
+    <div class="cell purple" style="grid-column: 15; grid-row: 4;"></div>
+    <div class="cell olive-green" style="grid-column: 16; grid-row: 4;"></div>
+    <div class="cell pink-magenta" style="grid-column: 17; grid-row: 4;"></div>
+    <div class="cell yellow" style="grid-column: 18; grid-row: 4;"></div>
+
+    
+    <div class="cell olive-green" style="grid-column: 1; grid-row: 5;"></div>
+    <div class="cell salmon" style="grid-column: 2; grid-row: 5;">38</div>
+
+    <div class="cell blue" style="grid-column: 4; grid-row: 5;"></div>
+    <div class="cell blue" style="grid-column: 5; grid-row: 5;"></div>
+    <div class="cell blue" style="grid-column: 6; grid-row: 5;"></div>
+    <div class="cell blue" style="grid-column: 7; grid-row: 5;"></div>
+    <div class="cell blue" style="grid-column: 8; grid-row: 5;"></div>
+    <div class="cell blue" style="grid-column: 9; grid-row: 5;"></div>
+    <div class="cell blue" style="grid-column: 10; grid-row: 5;"></div>
+    <div class="cell blue" style="grid-column: 11; grid-row: 5;"></div>
+    <div class="cell blue" style="grid-column: 12; grid-row: 5;"></div>
+
+    <div class="cell orange" style="grid-column: 13; grid-row: 5;"></div>
+    <div class="cell orange" style="grid-column: 14; grid-row: 5;"></div>
+    <div class="cell purple" style="grid-column: 15; grid-row: 5;"></div>
+    <div class="cell purple" style="grid-column: 16; grid-row: 5;"></div>
+    <div class="cell pink-magenta" style="grid-column: 17; grid-row: 5;"></div>
+    <div class="cell yellow" style="grid-column: 18; grid-row: 5;"></div>
+
+   
+    <div class="cell olive-green" style="grid-column: 1; grid-row: 6;"></div>
+    <div class="cell salmon" style="grid-column: 2; grid-row: 6;">56</div>
+    <div class="cell peach" style="grid-column: 3; grid-row: 6;"></div>
+
+    <div class="cell blue" style="grid-column: 4; grid-row: 6;"></div>
+    <div class="cell blue" style="grid-column: 5; grid-row: 6;"></div>
+    <div class="cell blue" style="grid-column: 6; grid-row: 6;"></div>
+    <div class="cell blue" style="grid-column: 7; grid-row: 6;"></div>
+    <div class="cell blue" style="grid-column: 8; grid-row: 6;"></div>
+    <div class="cell blue" style="grid-column: 9; grid-row: 6;"></div>
+    <div class="cell blue" style="grid-column: 10; grid-row: 6;"></div>
+    <div class="cell blue" style="grid-column: 11; grid-row: 6;"></div>
+    <div class="cell blue" style="grid-column: 12; grid-row: 6;"></div>
+
+    <div class="cell orange" style="grid-column: 13; grid-row: 6;"></div>
+    <div class="cell orange" style="grid-column: 14; grid-row: 6;"></div>
+    <div class="cell orange" style="grid-column: 15; grid-row: 6;"></div>
+    <div class="cell purple" style="grid-column: 16; grid-row: 6;"></div>
+    <div class="cell pink-magenta" style="grid-column: 17; grid-row: 6;"></div>
+    <div class="cell yellow" style="grid-column: 18; grid-row: 6;"></div>
+
+   
+    <div class="cell olive-green" style="grid-column: 1; grid-row: 7;"></div>
+    <div class="cell salmon" style="grid-column: 2; grid-row: 7;">88</div>
+    <div class="cell peach" style="grid-column: 3; grid-row: 7;"></div>
+
+    <div class="cell blue" style="grid-column: 4; grid-row: 7;"></div>
+    <div class="cell blue" style="grid-column: 5; grid-row: 7;"></div>
+    <div class="cell blue" style="grid-column: 6; grid-row: 7;"></div>
+    <div class="cell blue" style="grid-column: 7; grid-row: 7;"></div>
+    <div class="cell blue" style="grid-column: 8; grid-row: 7;"></div>
+    <div class="cell blue" style="grid-column: 9; grid-row: 7;"></div>
+    <div class="cell blue" style="grid-column: 10; grid-row: 7;"></div>
+    <div class="cell blue" style="grid-column: 11; grid-row: 7;"></div>
+    <div class="cell blue" style="grid-column: 12; grid-row: 7;"></div>
+
+    <div class="cell grey-dark" style="grid-column: 13; grid-row: 7;"></div>
+    <div class="cell grey-dark" style="grid-column: 14; grid-row: 7;"></div>
+    <div class="cell grey-dark" style="grid-column: 15; grid-row: 7;"></div>
+    <div class="cell grey-dark" style="grid-column: 16; grid-row: 7;"></div>
+    <div class="cell grey-dark" style="grid-column: 17; grid-row: 7;"></div>
+    <div class="cell grey-dark" style="grid-column: 18; grid-row: 7;"></div>
+
+  </div>
+
+  <div class="bottom-table">
+    <div class="bottom-row row-1">
+      <div class="bottom-cell label">La</div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+    </div>
+    <div class="bottom-row row-2">
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell">Am</div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell"></div>
+      <div class="bottom-cell label" style="justify-content: flex-end; padding-right: 3px;">No</div>
+    </div>
+  </div>
+
+</body>
+</html>

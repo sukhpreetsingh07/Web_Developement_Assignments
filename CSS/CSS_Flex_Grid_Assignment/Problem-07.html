@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Green Blocks Grid Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .box {
+            background-color: #1b7363;
+            height: 90px;
+            border-radius: 8px;
+        }
+
+        .row-1 .box-1 { flex: 20%; }
+        .row-1 .box-2 { flex: 60%; }
+        .row-1 .box-3 { flex: 20%; }
+
+        .row-2 .box-1 { flex: 60%; }
+        .row-2 .box-2 { flex: 20%; }
+        .row-2 .box-3 { flex: 20%; }
+
+        .row-3 .box-1 { flex: 20%; }
+        .row-3 .box-2 { flex: 20%; }
+        .row-3 .box-3 { flex: 60%; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row row-1">
+            <div class="box box-1"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3"></div>
+        </div>
+        <div class="row row-2">
+            <div class="box box-1"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3"></div>
+        </div>
+        <div class="row row-3">
+            <div class="box box-1"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3"></div>
+        </div>
+    </div>
+
+</body>
+</html>

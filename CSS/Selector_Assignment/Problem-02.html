@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms & Suites</title>
+
+  
+  <style>
+
+    body {
+      margin: 0;
+      padding: 60px 20px;
+      
+      background-color: white;
+      color: #333333;
+    }
+
+    
+    .header-section {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 50px auto;
+    }
+
+
+    .header-title {
+      font-size: 48px;
+      font-weight: normal;
+      color: orange;
+      margin: 0 0 20px 0;
+    }
+
+    
+    .header-description {
+      font-size: 14px;
+      color: grey;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    
+    .rooms-container {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      max-width: 1100px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    
+    .room-card {
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+      width: 320px;
+      overflow: hidden;
+      text-align: center;
+      padding: 12px;
+      box-sizing: border-box;
+    }
+
+    
+    .room-image-box {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      border-radius: 2px;
+      margin-bottom: 20px;
+      background-color: #eee;
+    }
+
+    .room-image-box img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    
+    .room-title {
+      font-size: 20px;
+      font-weight: bold;
+      color:black;
+      margin: 0 0 10px 0;
+    }
+
+    
+    .room-price {
+      font-size: 13px;
+      color: orange;
+      letter-spacing: 1.5px;
+      margin: 0 0 10px 0;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="header-section">
+    <h1 class="header-title">Rooms & Suits</h1>
+    <p class="header-description">
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+    </p>
+  </div>
+
+  
+  <div class="rooms-container">
+
+    
+    <div class="room-card">
+      <div class="room-image-box">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=80" alt="Single Room">
+      </div>
+      <h3 class="room-title">Single Room</h3>
+      <div class="room-price">₹3,500 / PER NIGHT</div>
+    </div>
+
+    
+    <div class="room-card">
+      <div class="room-image-box">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Family Room">
+      </div>
+      <h3 class="room-title">Family Room</h3>
+      <div class="room-price">₹6,000 / PER NIGHT</div>
+    </div>
+
+  
+    <div class="room-card">
+      <div class="room-image-box">
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=600&q=80" alt="Presidential Room">
+      </div>
+      <h3 class="room-title">Presidential Room</h3>
+      <div class="room-price">₹12,500 / PER NIGHT</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

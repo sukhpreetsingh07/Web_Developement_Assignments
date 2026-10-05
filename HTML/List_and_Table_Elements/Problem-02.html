@@ -1,348 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Stanford University Admission Handbook</title>
+    <title>Restaurant Digital Menu & Pricing Board</title>
 </head>
-
 <body>
 
-    <!-- Main Heading -->
     <header>
-        <h1>Stanford University Admission Handbook</h1>
-
-        <p>
-            Welcome to the admission handbook of Stanford University,
-            located in California, United States of America.
-        </p>
-
-        <hr>
+        <h1>The Spice Symphony Restaurant</h1>
+        <p>Welcome to The Spice Symphony, where authentic flavors meet modern culinary excellence. We bring you hand-crafted dishes made with organic spices and love.</p>
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500" alt="Restaurant Interior" width="400">
     </header>
 
-
-    <!-- University Image -->
-    <section>
-        <h2>Stanford University Campus</h2>
-
-        <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1200&q=80"
-            alt="University campus building representing Stanford University"
-            width="700">
-
-        <p>
-            Stanford University is a world-renowned university located
-            in California, USA.
-        </p>
-    </section>
-
     <hr>
 
+    <main>
+        <section id="menu-categories">
+            <h2>Our Menu Categories</h2>
 
-    <!-- Admission Overview -->
-    <section>
-        <h2>Admission Overview</h2>
+            <h3>Starters</h3>
+            <ul>
+                <li><strong>Paneer Tikka</strong> - Cottage cheese grilled in tandoor <mark>10% OFF</mark></li>
+                <li>Crispy Corn - Fried sweet corn with spices</li>
+            </ul>
 
-        <p>
-            Stanford University offers undergraduate and graduate programs
-            in many fields of education.
-        </p>
+            <h3>Main Course</h3>
+            <ul>
+                <li><strong>Butter Chicken</strong> - Signature creamy tomato gravy</li>
+                <li>Dal Makhani - Slow-cooked black lentils</li>
+            </ul>
 
-        <p>
-            Students should carefully review all admission requirements
-            before submitting their application.
-        </p>
+            <h3>Desserts</h3>
+            <ul>
+                <li><strong>Gulab Jamun</strong> - Fried dough balls in sugar syrup</li>
+                <li>Sizzling Brownie - Served with Vanilla Ice Cream <mark>BOGO Offer</mark></li>
+            </ul>
 
-        <p>
-            Visit the official
-            <a href="https://www.stanford.edu/" target="_blank">
-                Stanford University Website
+            <h3>Beverages</h3>
+            <ul>
+                <li><strong>Mango Lassi</strong> - Sweet yogurt drink</li>
+                <li>Masala Chai - Traditional Indian spiced tea</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="dining-experience">
+            <h2>Chef's Recommended Dining Experience</h2>
+            <ol>
+                <li>Start with a refreshing cold beverage to cleanse your palate.</li>
+                <li>Enjoy our mild starters while waiting for the main meal.</li>
+                <li>Savor the rich flavors of our signature Main Course dishes.</li>
+                <li>Conclude your dining journey with our hot desserts.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="menu-terms">
+            <h2>Menu Terms & Key</h2>
+            <dl>
+                <dt>Vegan</dt>
+                <dd>Dishes free from dairy, meat, and animal products.</dd>
+
+                <dt>Chef's Special</dt>
+                <dd>Handcrafted signature recipes curated by our head chef.</dd>
+
+                <dt>Gluten-Free</dt>
+                <dd>Items prepared without wheat, barley, or rye ingredients.</dd>
+
+                <dt>Bestseller</dt>
+                <dd>Most ordered and highly customer-rated dishes.</dd>
+
+                <dt>Combo</dt>
+                <dd>Meal packages served with side dishes and beverages.</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <section id="pricing">
+            <h2>Detailed Pricing Board</h2>
+            <table border="1">
+                <caption>Complete Menu Items, Sizes, Prices, and Availability</caption>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Size</th>
+                        <th>Price ($)</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paneer Tikka</td>
+                        <td>Starters</td>
+                        <td>Half / Full</td>
+                        <td>12.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Crispy Corn</td>
+                        <td>Starters</td>
+                        <td>Standard</td>
+                        <td>8.50</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Butter Chicken</td>
+                        <td rowspan="2">Main Course</td>
+                        <td>Full</td>
+                        <td>16.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Dal Makhani</td>
+                        <td>Full</td>
+                        <td>13.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Gulab Jamun</td>
+                        <td rowspan="2">Desserts</td>
+                        <td>2 Pieces</td>
+                        <td>5.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Sizzling Brownie</td>
+                        <td>Standard</td>
+                        <td>7.50</td>
+                        <td>Limited</td>
+                    </tr>
+                    <tr>
+                        <td>Mango Lassi</td>
+                        <td rowspan="2">Beverages</td>
+                        <td>Glass</td>
+                        <td>4.50</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Masala Chai</td>
+                        <td>Cup</td>
+                        <td>3.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="gallery">
+            <h2>Food Gallery</h2>
+            <a href="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=800" target="_blank">
+                <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=300" alt="Paneer Tikka Clickable Image" title="Click to view full image">
             </a>
-            for more information.
-        </p>
-    </section>
+            <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=300" alt="Butter Chicken Image">
+        </section>
+
+        <hr>
+
+        <section id="testimonials">
+            <h2>Customer Review</h2>
+            <blockquote>
+                "The Butter Chicken and Mango Lassi at Spice Symphony are truly unmatched! The dining experience was smooth and unforgettable."
+            </blockquote>
+        </section>
+    </main>
 
     <hr>
 
-
-    <!-- Eligibility -->
-    <section>
-        <h2>Eligibility</h2>
-
-        <p>Applicants should meet the following general requirements:</p>
-
-        <ul>
-            <li>Completed secondary school education.</li>
-            <li>Strong academic performance.</li>
-            <li>Required standardized test scores, if applicable.</li>
-            <li>English language proficiency for international students.</li>
-            <li>Submission of all required application documents.</li>
-        </ul>
-    </section>
-
-    <hr>
-
-
-    <!-- Application Process -->
-    <section>
-        <h2>Application Process</h2>
-
-        <p>Follow these steps in the correct sequence:</p>
-
-        <ol>
-            <li>Visit the official Stanford admission website.</li>
-            <li>Create or access the application portal.</li>
-            <li>Complete the online application form.</li>
-            <li>Upload the required documents.</li>
-            <li>Submit academic records and recommendations.</li>
-            <li>Pay the application fee or request a fee waiver if eligible.</li>
-            <li>Review the application carefully.</li>
-            <li>Submit the application before the deadline.</li>
-        </ol>
-
-        <p>
-            <strong>Important:</strong>
-            All applicants must submit their application before the deadline.
-        </p>
-
-        <p>
-            Application deadline:
-            <mark>January 5</mark>
-            for the Regular Decision application.
-        </p>
-    </section>
-
-    <hr>
-
-
-    <!-- Required Documents -->
-    <section>
-        <h2>Required Documents</h2>
-
-        <ul>
-            <li>Completed Application Form</li>
-            <li>Academic Transcripts</li>
-            <li>Letters of Recommendation</li>
-            <li>Personal Essay or Statement</li>
-            <li>Standardized Test Scores, if required</li>
-            <li>Proof of English Language Proficiency, if applicable</li>
-            <li>Application Fee or Fee Waiver Request</li>
-        </ul>
-
-        <p>
-            <strong>Mandatory:</strong>
-            Students should ensure that all required documents are submitted
-            correctly and before the deadline.
-        </p>
-    </section>
-
-    <hr>
-
-
-    <!-- Important Terms -->
-    <section>
-        <h2>Important Admission Terms</h2>
-
-        <dl>
-
-            <dt><strong>Eligibility</strong></dt>
-            <dd>
-               * The minimum qualifications required for a student to apply
-                for admission.
-            </dd>
-
-            <br>
-
-            <dt><strong>Merit List</strong></dt>
-            <dd>
-               * A list of applicants ranked according to their academic
-                performance or selection criteria.
-            </dd>
-
-            <br>
-
-            <dt><strong>Counselling</strong></dt>
-            <dd>
-               * A process that helps students understand admission options,
-                programs, and academic opportunities.
-            </dd>
-
-            <br>
-
-            <dt><strong>Scholarship</strong></dt>
-            <dd>
-               * Financial assistance provided to eligible students based on
-                need, merit, or other criteria.
-            </dd>
-
-            <br>
-
-            <dt><strong>Registration</strong></dt>
-            <dd>
-               * The official process of enrolling as a student after
-                receiving admission.
-            </dd>
-
-        </dl>
-    </section>
-
-    <hr>
-
-
-    <!-- Fee Structure -->
-    <section>
-        <h2>Fee Structure</h2>
-
-        <table border="1" cellpadding="10">
-
-            <caption>
-                <strong>Sample University Program Fee Structure</strong>
-            </caption>
-
-            <thead>
-                <tr>
-                    <th>Program / Course</th>
-                    <th>Duration</th>
-                    <th>Tuition Fee</th>
-                    <th>Examination Fee</th>
-                    <th>Total Fee</th>
-                </tr>
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td>Computer Science</td>
-                    <td>4 Years</td>
-                    <td>$60,000</td>
-                    <td>$500</td>
-                    <td>$60,500</td>
-                </tr>
-
-                <tr>
-                    <td>Artificial Intelligence</td>
-                    <td>4 Years</td>
-                    <td>$60,000</td>
-                    <td>$500</td>
-                    <td>$60,500</td>
-                </tr>
-
-                <tr>
-                    <td>Business Administration</td>
-                    <td>4 Years</td>
-                    <td>$58,000</td>
-                    <td>$500</td>
-                    <td>$58,500</td>
-                </tr>
-
-                <tr>
-                    <td>Engineering</td>
-                    <td>4 Years</td>
-                    <td>$62,000</td>
-                    <td>$500</td>
-                    <td>$62,500</td>
-                </tr>
-
-                <tr>
-                    <td>Medicine</td>
-                    <td>4 Years</td>
-                    <td>$65,000</td>
-                    <td>$700</td>
-                    <td>$65,700</td>
-                </tr>
-
-                <tr>
-                    <td>Data Science</td>
-                    <td>4 Years</td>
-                    <td>$60,000</td>
-                    <td>$500</td>
-                    <td>$60,500</td>
-                </tr>
-
-            </tbody>
-
-        </table>
-    </section>
-
-    <hr>
-
-
-    
-    <section>
-        <h2>Message from the Admission Office</h2>
-
-        <blockquote>
-            "We encourage students from different backgrounds to apply and
-            explore the academic opportunities available at Stanford University.
-            Submit your application carefully and ensure that all required
-            documents are complete before the application deadline."
-        </blockquote>
-    </section>
-
-    <hr>
-
-
-    <!-- Useful Links -->
-    <section>
-        <h2>Useful Links</h2>
-
-        <p>
-            Official Stanford Admissions Website:
-            <a href="https://admission.stanford.edu/" target="_blank">
-                Apply for Stanford Admission
-            </a>
-        </p>
-
-        <p>
-            Official Stanford University Website:
-            <a href="https://www.stanford.edu/" target="_blank">
-                Visit Stanford University
-            </a>
-        </p>
-
-        <p>
-            Useful External Education Resource:
-            <a href="https://www.commonapp.org/" target="_blank">
-                Common Application
-            </a>
-        </p>
-    </section>
-
-    <hr>
-
-
-    <!-- Contact -->
-    <section>
-        <h2>Contact</h2>
-
-        <p>
-            <strong>Stanford University</strong>
-        </p>
-
-        <p>
-            Stanford, California, United States of America
-        </p>
-
-        <p>
-            For official contact information, visit:
-            <a href="https://www.stanford.edu/contact/" target="_blank">
-                Stanford University Contact Page
-            </a>
-        </p>
-    </section>
-
-    <hr>
-
-
-    <!-- Footer -->
     <footer>
+        <h2>Contact & Reservations</h2>
+        <p>Location: 124 Gourmet Street, Foodville</p>
         <p>
-          --- 2026 Stanford University Admission Handbook |
-            Created for Educational Purposes
+            <a href="mailto:info@spicesymphony.com">Contact Us via Email</a> | 
+            <a href="#pricing">Reserve a Table</a>
         </p>
     </footer>
 
 </body>
-
 </html>
